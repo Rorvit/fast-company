@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import QualitiesList from "../../ui/qualitites/qualitiesList";
 import API from "../../../api";
 import { Link } from "react-router-dom";
-import CommentForm from "../../common/comments/commentForm";
-import Comments from "../../common/comments/comments";
+import CommentForm from "../../../components/common/comments/commentForm";
+import Comments from "../../../components/common/comments/comments";
+import Loader from "../../../utils/loader";
 
 const UserPage = ({ userId }) => {
     const [user, setUser] = useState();
@@ -55,7 +56,7 @@ const UserPage = ({ userId }) => {
                                 </button>
                                 <div className="d-flex flex-column align-items-center text-center  position-relative">
                                     <img
-                                        src={`https://avatars.dicebear.com/API/avataaars/${(
+                                        src={`https://avatars.dicebear.com/api/croodles-neutral/your-custom-seed.svg${(
                                             Math.random() + 1
                                         )
                                             .toString(36)
@@ -122,11 +123,7 @@ const UserPage = ({ userId }) => {
                                 add={addComment}
                             />
                         ) : (
-                            <div className="spinner-border m-5" role="status">
-                                <span className="visually-hidden">
-                                    Loading...
-                                </span>
-                            </div>
+                            <Loader />
                         )}
                         {users && comments ? (
                             <Comments
@@ -136,22 +133,14 @@ const UserPage = ({ userId }) => {
                                 remove={removeComment}
                             />
                         ) : (
-                            <div className="spinner-border m-5" role="status">
-                                <span className="visually-hidden">
-                                    Loading...
-                                </span>
-                            </div>
+                            <Loader />
                         )}
                     </div>
                 </div>
             </div>
         );
     }
-    return (
-        <div className="spinner-border m-5" role="status">
-            <span className="visually-hidden">Loading...</span>
-        </div>
-    );
+    return <Loader />;
 };
 
 export default UserPage;
@@ -159,30 +148,3 @@ UserPage.propTypes = {
     userId: PropTypes.string.isRequired,
     users: PropTypes.array
 };
-
-// import React from "react";
-// import PropTypes from "prop-types";
-
-// import UserPageEdit from "../userPageEdit/";
-// import UserProfile from "../../ui/userProfile";
-
-// const UserPage = ({ userId, type = "" }) => {
-//     console.log("userId", userId);
-//     if (type?.toLowerCase() === "edit") {
-//         return (
-//             <div className="container mt-5">
-//                 <div className="row">
-//                     <UserPageEdit userId={userId} />;
-//                 </div>
-//             </div>
-//         );
-//     }
-//     return <UserProfile userId={userId} />;
-// };
-
-// UserPage.propTypes = {
-//     userId: PropTypes.string.isRequired,
-//     type: PropTypes.string
-// };
-
-// export default UserPage;

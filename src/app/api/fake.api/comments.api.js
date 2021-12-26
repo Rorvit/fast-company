@@ -13,41 +13,41 @@ const comments = [
         content: "Lorem ipsum dolor and etc",
         created_at: "1633573058520"
     },
-    {
-        _id: "67rdca3eeb7f6fgdas1",
-        pageId: "67rdca3eeb7f6fgeed471816",
-        userId: "67rdca3eeb7f6fgeed471818",
-        content: "Коммент для Кокса от Рэйчел Грин",
-        created_at: "1634993058520"
-    },
-    {
-        _id: "67rdca3eeb7f6fgdas2",
-        pageId: "67rdca3eeb7f6fgeed471816",
-        userId: "67rdca3eeb7f6fgeed471818",
-        content: "Коммент для Кокса от Рэйчел Грин 2",
-        created_at: "1635193058520"
-    },
-    {
-        _id: "67rdca3eeb7f6fgdas3",
-        pageId: "67rdca3eeb7f6fgeed471816",
-        userId: "67rdca3eeb7f6fgeed471818",
-        content: "Коммент для Кокса от Рэйчел Грин 3",
-        created_at: "1635276000000"
-    },
-    {
-        _id: "67rdca3eeb7f6fgdas4",
-        pageId: "67rdca3eeb7f6fgeed471816",
-        userId: "67rdca3eeb7f6fgeed471818",
-        content: "Коммент для Кокса от Рэйчел Грин 4",
-        created_at: "1635276500000"
-    },
-    {
-        _id: "67rdca3eeb7f6fgdas5",
-        pageId: "67rdca3eeb7f6fgeed471816",
-        userId: "67rdca3eeb7f6fgeed471818",
-        content: "Коммент для Кокса от Рэйчел Грин 5",
-        created_at: "1000000000000"
-    },
+    // {
+    //     _id: "67rdca3eeb7f6fgdas1",
+    //     pageId: "67rdca3eeb7f6fgeed471816",
+    //     userId: "67rdca3eeb7f6fgeed471818",
+    //     content: "Коммент для Кокса от Рэйчел Грин",
+    //     created_at: "1634993058520"
+    // },
+    // {
+    //     _id: "67rdca3eeb7f6fgdas2",
+    //     pageId: "67rdca3eeb7f6fgeed471816",
+    //     userId: "67rdca3eeb7f6fgeed471818",
+    //     content: "Коммент для Кокса от Рэйчел Грин 2",
+    //     created_at: "1635193058520"
+    // },
+    // {
+    //     _id: "67rdca3eeb7f6fgdas3",
+    //     pageId: "67rdca3eeb7f6fgeed471816",
+    //     userId: "67rdca3eeb7f6fgeed471818",
+    //     content: "Коммент для Кокса от Рэйчел Грин 3",
+    //     created_at: "1635276000000"
+    // },
+    // {
+    //     _id: "67rdca3eeb7f6fgdas4",
+    //     pageId: "67rdca3eeb7f6fgeed471816",
+    //     userId: "67rdca3eeb7f6fgeed471818",
+    //     content: "Коммент для Кокса от Рэйчел Грин 4",
+    //     created_at: "1635276500000"
+    // },
+    // {
+    //     _id: "67rdca3eeb7f6fgdas5",
+    //     pageId: "67rdca3eeb7f6fgeed471816",
+    //     userId: "67rdca3eeb7f6fgeed471818",
+    //     content: "Коммент для Кокса от Рэйчел Грин 5",
+    //     created_at: "1000000000000"
+    // },
     {
         _id: "67rdca3eeb7f6fgdaasd",
         pageId: "67rdca3eeb7f6fgeed471817",

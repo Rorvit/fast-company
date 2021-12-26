@@ -7,29 +7,27 @@ export function validator(data, config) {
                 if (typeof data === "boolean") {
                     statusValidate = !data;
                 } else {
-                    statusValidate = data.trim() === "";
+                    if (Array.isArray(data)) {
+                        statusValidate = !data.length();
+                    } else {
+                        statusValidate = data.trim() === "";
+                    }
                 }
                 break;
             }
-            case "isEmail": {
-                const emailRegExp = /^\S+@\S+\.\S+$/g;
-                statusValidate = !emailRegExp.test(data);
+
+            case "isEmail":
+                statusValidate = !/^\S+@\S+\.\S+$/g.test(data);
                 break;
-            }
-            case "isCapitalSymbol": {
-                const capitalRegExp = /[A-Z]+/g;
-                statusValidate = !capitalRegExp.test(data);
+            case "isCapitalSymbol":
+                statusValidate = !/[A-Z]+/g.test(data);
                 break;
-            }
-            case "isContainDigit": {
-                const digitRegExp = /\d+/g;
-                statusValidate = !digitRegExp.test(data);
+            case "isContainDigit":
+                statusValidate = !/\d+/g.test(data);
                 break;
-            }
-            case "min": {
+            case "min":
                 statusValidate = data.length < config.value;
                 break;
-            }
             default:
                 break;
         }

@@ -4,9 +4,6 @@ const TextAreaField = ({ label, name, value, rows, onChange, error }) => {
     const handleChange = ({ target }) => {
         onChange({ name: target.name, value: target.value });
     };
-    // const getInputClasses = () => {
-    //     return "form-control" + (error ? " is-invalid" : "");
-    // };
     return (
         <div className="mb-3">
             <label htmlFor={name} className="form-label">
