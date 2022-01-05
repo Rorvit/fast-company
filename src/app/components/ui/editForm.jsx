@@ -82,7 +82,7 @@ const EditForm = ({ user }) => {
                 name="email"
                 value={data.email}
                 onChange={handleChange}
-                error={errors.email}
+                // error={errors.email}
             />
             <SelectField
                 label="Выбери свою профессию"
@@ -116,7 +116,7 @@ const EditForm = ({ user }) => {
                 disabled={!isValid}
                 className="btn btn-primary w-100 mx-auto"
             >
-                <Link to={`/users/${user._id}`}>СОХРАНИТЬ</Link>
+                <Link to={`/users/${user._id}`}>Сохранить</Link>
             </button>
         </form>
     );

@@ -61,7 +61,7 @@ const CommentForm = ({ forId, users, add }) => {
                     <SelectField
                         label=""
                         onChange={handleChange}
-                        value={data.user.name}
+                        value={data.user}
                         defaultOption="Choose"
                         options={{ ...users }}
                         error={errors.user}
